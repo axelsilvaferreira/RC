@@ -1,0 +1,30 @@
+Referências:
+
+wikipedia
+https://en.wikipedia.org/wiki/Content_delivery_network
+
+Webopedia
+http://www.webopedia.com/TERM/C/CDN.html
+
+How Stuff Works
+http://www.howstuffworks.com/search.php?terms=CDN
+
+WebReference | CDN_List.pdf
+http://www.webreference.com/internet/software/site_management/cdns.html
+
+Youtube | CDN Definition
+https://www.youtube.com/watch?v=Uu0f1HRg7aY
+
+How Dynamic Site Acceleration works PDF
+http://blog.streamingmedia.com/2010/10/how-dynamic-site-acceleration-works-what-akamai-and-cotendo-offer.html
+
+
+
+
+
+
+
+
+
+
+
