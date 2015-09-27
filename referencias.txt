@@ -18,7 +18,8 @@ https://www.youtube.com/watch?v=Uu0f1HRg7aY
 How Dynamic Site Acceleration works PDF
 http://blog.streamingmedia.com/2010/10/how-dynamic-site-acceleration-works-what-akamai-and-cotendo-offer.html
 
-
+What is a Content Delivery Network (CDN)? | excITingIP.com
+http://www.excitingip.com/1028/cdn-content-delivery-networks-technology-advantages/
 
 
 
