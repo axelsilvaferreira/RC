@@ -23,9 +23,18 @@ http://www.excitingip.com/1028/cdn-content-delivery-networks-technology-advantag
 
 
 
+Afonso & Alfredo:
+=================
 
+Utilizing Content Delivery Network in Cloud Computing
+http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=6383505
 
+Demonstration of Standard IPTV Content Delivery Network Architecture Interfaces
+http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=4785012
 
+An Architecture for Distributed Content Delivery Network
+http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=4444113
 
-
+A Cloud-Oriented Content Delivery Network Paradigm: Modeling and Assessment
+http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=6461891
 
