@@ -18,7 +18,8 @@ Principal fonte:
 Existem dois tipos principais de CDN actualmente em utilização, com 
 diferentes arquitecturas:
 
-## Arquitectura comercial
+### Arquitectura comercial
+
  - Relação cliente-servidor quase exclusiva
  - Ver exemplo da Akami
  - *Modo de funcionamento* - os clientes (provedores de conteúdo) 
@@ -46,7 +47,24 @@ não possui concorreência)~~
 
 
 
-## Arquitectura académica
+### Arquitectura académica
+
+ - Arquitectura `peer-to-peer` sem fins lucrativos, mantida por um 
+ conjunto de voluntários.
+ - Cada utilizador partilha um pouco do dos seus recursos (armazenamento, 
+ largura de banda, processamento do CPU), para permitir o envio e recepção
+ da informação através da rede
+ - Não requer o pagamento de servidores caríssimos
+ - Não necessita de um repositório central da informação (ao contrário
+ da Akamai) pois a informação está espalhada pelos pares
+ - A qualidade da rede aumenta em proporção do número de pares activos, 
+ benificiando de uma aumento de pares (contrariamente aos servidores da
+ Akamai)
+
+**Pricincipal desvantagem** - a disponibilidade e qualidade da recepção 
+dos conteúdos está dependente dos provedores de conteúdo, que sendo 
+voluntários não necessitam de seguir um conjunto de regras claras.
+
 
 Está também prevista a criação de uma nova arquitectura, 
 **Distributed Content Delivery Network**, que cobre as vantagens dos 
