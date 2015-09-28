@@ -27,13 +27,13 @@ diferentes arquitecturas:
  ervidores da Akamai, o que permite um melhor desempenho da mesma 
  (ver secção `Vantagens`). O seu modo de utilização é o seguinte:
 
-   1. O browser do utilizador acede à aplicação normalmente (através do
-   da página `index.html`, como em todos os sites)
-   2. O código `HTML` da aplicação possui links para conteúdos (imagens,
-   videos, jogos, etc...) armazenados nos servidores da Akamai
-   3. O browser do utilizador processa o código `HTML` ao mesmo tempo
-   que obtém os conteúdos dos servidores da Akamai, resultando num 
-   aumento da performance do mesmo.
+  1. O browser do utilizador acede à aplicação normalmente (através do
+  da página `index.html`, como em todos os sites)
+  2. O código `HTML` da aplicação possui links para conteúdos (imagens,
+  videos, jogos, etc...) armazenados nos servidores da Akamai
+  3. O browser do utilizador processa o código `HTML` ao mesmo tempo
+  que obtém os conteúdos dos servidores da Akamai, resultando num 
+  aumento da performance do mesmo.
 
 **Principal desvantagem** - custo financeiro de aluguer dos servidores
 muito elevado (só grandes empresas conseguem pagá-lo). Sendo a Akamai a
