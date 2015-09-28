@@ -15,39 +15,54 @@
 
 \begin{document}
 \mainmatter
-\title{Paper Title}
+\title{T10 - [\dots in] Content-Delivery Networks}
 
 \titlerunning{Paper Title}
 
-\author{Autor1 \and Autor2 \and Autor3}
+\author{Afonso Silva\and Alfredo Gomes \and Axel Ferreira}
 
 \authorrunning{Autor1 \and Autor2 \and Autor3}
 
 \institute{
-University of Minho, Department of  Informatics, 4710-057 Braga, Portugal\\
-e-mail: \{aXXXXX,aYYYYY,aZZZZZ\}@alunos.uminho.pt
+University of Minho, Department of Informatics, 4710-057 Braga, Portugal\\
+e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 }
 
-\date{}
-\bibliographystyle{splncs}
+\date{\today}
 
+\bibliographystyle{splncs}
+%---------------- TITLE
 \maketitle
+
+%---------------- TABLE OF CONTENTS
+\tableofcontents
+%\newpage
+%---------------- ABSTRACT
 \begin{abstract}
 Resumo...
 \end{abstract}
-
+%----------------
 \section{Introduction}
+
+Ideias: 	
+	- Created in the second half of the 90's
+	- Created to respond to the following problems
+		- TCP slow start
+		- HTTP Chatty Protocol
+			->Very robust, works even with multiple packet losses
+			    But not optimised for current networks and thus not taking advantage
+			    of more modern better-quality networks
+		- Multiple (30-50) RTTs / page
+		- Connection load at origin
+		- Content Delivery 
+		- 
+
 
 %Não esquecer de referenciar apropriadamente...
  The present study proposes a novel and simple strategy to defined high-level unified QoS metrics for Internet services resorting to fuzzy logic principles \cite{Zadeh65}. 
- Attending to the specificity of the problem, which combines the difficulty of handling multiple low-level QoS parameters with the blur boundaries of user perceived QoS, the use of fuzzy logic to achieve a unique per service QoS metric brings a clear advantage and simplicity to the solution.
-Fuzzy logic has two different meanings~\cite{Nguyen99}. ...
 
-\section{One more section}
+\section{Âmbito de aplicação}
 
-\subsection{One subsection}
-abdc...
-\subsection{One more...}
 
 %UNCOMMENT se necessário
 %De acordo com o ilustrado na Figura~\ref{fig:controller}
@@ -75,10 +90,26 @@ According to Table~\ref{tab:TabelaExemplo}...
 \end{figure}
 
 %\section{Simulation Scenario}
+\section{Desafios associados}
+
+\section{Propostas relevantes na área}
+
+\section{Lista de projetos atuais}
 
 \section{Conclusions}
 Neste trabalho...
  
+%--------------- G L O S S A R I O ----------------%
+	CDN - Content-delivery Network
+	RTT - round-trip delay time
+	PoP - Points of Presence
+	ASP - Application Service Provider
+	SaaS - Software as a Service
+	Caching -
+	Mirroring -
+	
+
+%----------- B I B L I O G R A F I A -------------%
 %UNCOMMENT para a bibliografia 
 %% ficheirodebibliografia.bib
 %\bibliography{ficheirodebibliografia}
@@ -94,5 +125,7 @@ Nguyen, H., Walker, E.:
 \newblock {First course in fuzzy logic}.
 \newblock {Boca Raton: Chapman and Hall/CRC Press} (1999)
 \end{thebibliography}
+
+
 
 \end{document}
