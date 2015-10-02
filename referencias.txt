@@ -1,5 +1,11 @@
 Referências:
 
+Zipf's Law | wikipedia
+https://en.wikipedia.org/wiki/Zipf%27s_law
+
+Internet | Wikipedia
+https://en.wikipedia.org/wiki/Internet
+
 wikipedia
 https://en.wikipedia.org/wiki/Content_delivery_network
 
@@ -21,7 +27,8 @@ http://blog.streamingmedia.com/2010/10/how-dynamic-site-acceleration-works-what-
 What is a Content Delivery Network (CDN)? | excITingIP.com
 http://www.excitingip.com/1028/cdn-content-delivery-networks-technology-advantages/
 
-
+DNS - Wikipedia link
+https://en.wikipedia.org/wiki/Domain_Name_System
 
 Afonso & Alfredo:
 =================
