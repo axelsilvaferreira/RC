@@ -47,7 +47,7 @@ Resumo...
 %Contextualização
 The  Internet has it's origins in the early 1980's. And started to have an exponential growth when commercial companies started linking to the existing academic and military networks during the 90's. As the popularity if the Internet increased the number of devices connected started to see an exponential growth.\\
 % Problemas que levaram a criação
-At the time (analogic) networks were unreliable and thus internet communication protocols were designed in a robust fashion. There are multiple RTTs (Round-trip Time) (30-50 per page). TCP is a reliable but slow starting protocol. Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being very chatty, this causes a latency problem over long distance communication.
+At the time (analogue) networks were unreliable and thus internet communication protocols were designed in a robust fashion. There are multiple RTTs (Round-trip Time) (30-50 per page). TCP is a reliable but slow starting protocol. Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being very chatty, this causes a latency problem over long distance communication.
 Modern (digital) networks are faster and more reliable, but most of the core protocols above don't take advantage of the increased reliability.\\ @@@@@@@@@@@(DUE TO Backwards compatibility ?????? )@@@@@@@@@@@@@\\
 Another problem introduced with the ever growing popularity of the internet was caused as connection speeds started to grow when content increased in size. New technologies star to provide images, videos and other dynamic content. This caused a bottleneck problem at the origin (content providers).
 With the continuous Internet growth a response was necessary to solve the above problems and Content Delivery Networks started to emerge (in 95's)..
@@ -72,10 +72,13 @@ Ideias:
 
 \section{Âmbito de aplicação}
 
+Netflix FHD 5Mbit/seg
+	   UHD 25Mbit/seg
+
 
 %UNCOMMENT se necessário
 %De acordo com o ilustrado na Figura~\ref{fig:controller}
-%% Exemplo para inserção de uma figura
+% Exemplo para inserção de uma figura
 %\begin{figure}
 %\begin{center}
 %\includegraphics[scale=0.40]{figura.pdf} 
@@ -103,8 +106,8 @@ According to Table~\ref{tab:TabelaExemplo}...
 
 \section{Propostas relevantes na área}
 \if
-	CDN Comercial
-	CDN P2P
+	CDN Comercial (Uses CDN Servers at ISPs to provide content)
+	CDN P2P (Uses Both Dedicated Servers and Peer-user-owned Computers)
 	DCDN [Distributed CDN]
 \fi
 
