@@ -1,5 +1,8 @@
 Referências:
 
+Netflix | Wikipedia
+https://en.wikipedia.org/wiki/Netflix#Netflix_Open_Connect_CDN
+
 Zipf's Law | wikipedia
 https://en.wikipedia.org/wiki/Zipf%27s_law
 
