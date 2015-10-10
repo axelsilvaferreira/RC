@@ -49,14 +49,29 @@ Resumo...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}									%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Contextualização
+
+%\subsection{Context}
 \lettrine[lines=2]{T}{he} Internet has it's origins in the early 1980's and started to have an exponential growth when commercial companies started linking to the existing academic and military networks during the 90's. As the popularity if the Internet increased the number of devices connected started to see an exponential growth.\\
-% Problemas que levaram a criação
+% \subsection{Problems }
 At the time (analogue) networks were unreliable and thus internet communication protocols were designed in a robust fashion. There are multiple RTTs (Round-trip Time) (30-50 per page). TCP is a reliable but slow starting protocol. Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being very chatty, this causes a latency problem over long distance communication.
 Modern (digital) networks are faster and more reliable, but most of the core protocols above don't take advantage of the increased reliability.\\
 % @@@@ DUE TO Backwards compatibility ? @@@@
 Another problem introduced with the ever growing popularity of the internet was caused as connection speeds started to grow when content increased in size. New technologies star to provide images, videos and other dynamic content. This caused a bottleneck problem at the origin (content providers).
-With the continuous Internet growth a response was necessary to solve the above problems and Content Delivery Networks started to emerge (in 95's)..
+With the continuous Internet growth a response was necessary to solve the above problems and Content Delivery Networks started to emerge (in 95's)\dots 
+\subsection{What is a CDN?}
+A Content Delivery Network (CDN) is a large network of distributed storage servers which cash the content in multiple locations widely spread. 
+\subsection{How does it Work?}
+A 
+\subsection{What are the Advantages?}
+	
+	%-Redundancy (caso desastre natural, ex.: incendio uMinho)
+	%-Absorve melhor ataques DDoS
+	%-Cheap to get going (pay as you go) no need for big investment at beguinning
+\subsection{What are the Desadvantages?}
+	% Provider End (CDN Proviedr)
+	% Client End (Content Provider)
+	%-Usually expensive (due to large distributed infrastructure (high mainenece costs))
+	%-Lack of standards and Norms => hard to change provider
 
 
 %------ MULTI LINE COMENT -------
@@ -111,53 +126,68 @@ According to Table~\ref{tab:TabelaExemplo}...
 \section{Desafios associados}								%(Alfredo)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\if
-	O paper "Standard IPTV CDN Architecture Interfaces" Fala sobre desafios
-	- Falta de standards
-	- Incompatibilidade entre as CDNs existentes (impossibilita a mobilidade)
-	...
-\fi
 
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Propostas relevantes na área}						%(Axel)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \if
-	CDN Comercial (Uses CDN Servers at ISPs to provide content)
-	CDN P2P (Uses Both Dedicated Servers and Peer-user-owned Computers)
-	DCDN [Distributed CDN]
+	-Onde Colocar os servidores da CDN e Porquê?
+	-O paper "Standard IPTV CDN Architecture Interfaces" Fala sobre desafios
+		º Falta de standards
+		º Incompatibilidade entre as CDNs existentes (impossibilita a mobilidade)
 \fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Arquiteturas relevantes na área}						%(Axel)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+\if
+	Arquiteturas Propostas
+		CDN Comercial (Uses CDN Servers at ISPs to provide content)
+		CDN P2P (Uses Both Dedicated Servers and Peer-user-owned Computers)
+		(Hybrid) DCDN [Distributed CDN]
+\fi 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Lista de projetos atuais}							%()
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+
+
+
+
+
+	
+\if
 	Cloud Content Delivery Networks
 	
-	Free CDNs
-		BootStrap CDN\\
-		CloudFlare\\
-		CCDN\\
-		Incapsula\\
-		\dots\\
-	Telco CDN\\
-		AT\&T\\
-		Verizon\\
-		\dots\\
-	Traditional CDNs\\
-		Akamai\\
-		Amazon\\
-		Windows Azure\\
-		HP Cloud\\
-		CloudFlair\\
-		\dots 
+		Free CDNs
+			BootStrap CDN\\
+			CloudFlare\\
+			CCDN\\
+			Incapsula\\
+			\dots\\
+		Telco CDN\\
+			AT\&T\\
+			Verizon\\
+			\dots\\
+		Traditional CDNs\\
+			Akamai\\
+				Amazon\\
+			Windows Azure\\
+			HP Cloud\\
+			CloudFlair\\
+			\dots 
 
-	Commercial CDN P2P\\
-		BitTorrent\\
-		Internap\\
-		\dots\\
-
+		Commercial CDN P2P\\
+			BitTorrent\\
+			Internap\\
+			\dots\\
+\fi
 
 
 \section{Conclusion and Future Work}
