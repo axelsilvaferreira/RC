@@ -12,6 +12,8 @@
 \usepackage{fancyvrb}
 \usepackage{amsmath}
 %\renewcommand{\baselinestretch}{1.5}
+% CAPITAL LETTER LETTRINE
+\usepackage{lettrine}
 
 \begin{document}
 \mainmatter
@@ -24,7 +26,7 @@
 \authorrunning{Autor1 \and Autor2 \and Autor3}
 
 \institute{University of Minho, Department of Informatics, 4710-057 Braga, Portugal\\
-e-mail: \{,a71655,a53064\}@alunos.uminho.pt
+e-mail: \{afonsojoao96@gmail.com, a71655@alunos.uminho.pt, axelferreira@me.com
 }
 
 \date{\today}
@@ -38,42 +40,42 @@ e-mail: \{,a71655,a53064\}@alunos.uminho.pt
 %\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%---------------- ABSTRACT							 %()
+%---------------- ABSTRACT							%()
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
 Resumo...
 \end{abstract}
 %----------------
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Introduction}									     %(Axel)
+\section{Introduction}									%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Contextualização
-The  Internet has it's origins in the early 1980's. And started to have an exponential growth when commercial companies started linking to the existing academic and military networks during the 90's. As the popularity if the Internet increased the number of devices connected started to see an exponential growth.\\
+\lettrine[lines=2]{T}{he} Internet has it's origins in the early 1980's and started to have an exponential growth when commercial companies started linking to the existing academic and military networks during the 90's. As the popularity if the Internet increased the number of devices connected started to see an exponential growth.\\
 % Problemas que levaram a criação
 At the time (analogue) networks were unreliable and thus internet communication protocols were designed in a robust fashion. There are multiple RTTs (Round-trip Time) (30-50 per page). TCP is a reliable but slow starting protocol. Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being very chatty, this causes a latency problem over long distance communication.
-Modern (digital) networks are faster and more reliable, but most of the core protocols above don't take advantage of the increased reliability.\\ @@@@@@@@@@@(DUE TO Backwards compatibility ?????? )@@@@@@@@@@@@@\\
+Modern (digital) networks are faster and more reliable, but most of the core protocols above don't take advantage of the increased reliability.\\
+% @@@@ DUE TO Backwards compatibility ? @@@@
 Another problem introduced with the ever growing popularity of the internet was caused as connection speeds started to grow when content increased in size. New technologies star to provide images, videos and other dynamic content. This caused a bottleneck problem at the origin (content providers).
 With the continuous Internet growth a response was necessary to solve the above problems and Content Delivery Networks started to emerge (in 95's)..
 
 
 %------ MULTI LINE COMENT -------
 \if false
-Ideias: 	
-	- Created in the second half of the 90's
-	- Fast internet popularity growth rate
-	- Created to respond to the following problems
-		- TCP slow start
-		- HTTP Chatty Protocol
-			->Very robust, works even with multiple packet losses
-			    But not optimised for current networks and thus not taking advantage
-			    of more modern better-quality networks
-		- Multiple (30-50) RTTs / page
-		- Connection load at origin
-		- Content Delivery
+%Ideias: 	
+%	- Created in the second half of the 90's
+%	- Fast internet popularity growth rate
+%	- Created to respond to the following problems
+%		- TCP slow start
+%		- HTTP Chatty Protocol
+%			->Very robust, works even with multiple packet losses
+%			    But not optimised for current networks and thus not taking advantage
+%			    of more modern better-quality networks
+%		- Multiple (30-50) RTTs / page
+%		- Connection load at origin
+%		- Content Delivery
 \fi 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Âmbito de aplicação}								  %(Afonso)
+\section{Âmbito de aplicação}								%(Afonso)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Netflix FHD 5Mbit/seg
@@ -106,15 +108,20 @@ According to Table~\ref{tab:TabelaExemplo}...
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Simulation Scenario}								 %(Alfredo)
+\section{Desafios associados}								%(Alfredo)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Desafios associados}
 
+\if
+	O paper "Standard IPTV CDN Architecture Interfaces" Fala sobre desafios
+	- Falta de standards
+	- Incompatibilidade entre as CDNs existentes (impossibilita a mobilidade)
+	...
+\fi
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Propostas relevantes na área}						    %(Axel)
+\section{Propostas relevantes na área}						%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \if
@@ -124,7 +131,7 @@ According to Table~\ref{tab:TabelaExemplo}...
 \fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Lista de projetos atuais}
+\section{Lista de projetos atuais}							%()
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 	Cloud Content Delivery Networks
 	
