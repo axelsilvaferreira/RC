@@ -12,12 +12,13 @@
 \usepackage{fancyvrb}
 \usepackage{amsmath}
 %\renewcommand{\baselinestretch}{1.5}
+
 % CAPITAL LETTER LETTRINE
 \usepackage{lettrine}
 
 \begin{document}
 \mainmatter
-\title{T10 - [\dots in] Content-Delivery Networks}
+\title{Overview of Content-Delivery Networks Architecture}
 
 \titlerunning{Paper Title}
 
@@ -26,7 +27,7 @@
 \authorrunning{Autor1 \and Autor2 \and Autor3}
 
 \institute{University of Minho, Department of Informatics, 4710-057 Braga, Portugal\\
-e-mail: \{afonsojoao96@gmail.com, a71655@alunos.uminho.pt, axelferreira@me.com
+e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 }
 
 \date{\today}
@@ -51,27 +52,28 @@ Resumo...
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %\subsection{Context}
-\lettrine[lines=2]{T}{he} Internet has it's origins in the early 1980's and started to have an exponential growth when commercial companies started linking to the existing academic and military networks during the 90's. As the popularity if the Internet increased the number of devices connected started to see an exponential growth.\\
+\lettrine[lines=2]{T}{he} Internet has its origins in the early 1980's and presented an exponential growth when commercial companies started to link to the existing academic and military networks during the 90's. As the popularity of the Internet increased the number of devices connected started to see an exponential growth.\\ 
 % \subsection{Problems }
-At the time (analogue) networks were unreliable and thus internet communication protocols were designed in a robust fashion. There are multiple RTTs (Round-trip Time) (30-50 per page). TCP is a reliable but slow starting protocol. Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being very chatty, this causes a latency problem over long distance communication.
-Modern (digital) networks are faster and more reliable, but most of the core protocols above don't take advantage of the increased reliability.\\
+At that time (analogue) networks were unreliable and internet communication protocols were designed in a robust fashion. As an example, Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being a very chatty protocol, there are multiple RTTs (Round-trip Time) this causes a latency problem over long distance communication.
+Modern (digital) networks are faster and more reliable, but most of the core protocols mentioned above don't take advantage of the increased reliability.\\
 % @@@@ DUE TO Backwards compatibility ?Ê@@@@
-Another problem introduced with the ever growing popularity of the internet was caused as connection speeds started to grow when content increased in size. New technologies star to provide images, videos and other dynamic content. This caused a bottleneck problem at the origin (content providers).
-With the continuous Internet growth a response was necessary to solve the above problems and Content Delivery Networks started to emerge (in 95's)\dots 
-\subsection{What is a CDN?}
+As the internet role in daily life grew, new technologies star to emerge providing images videos and other dynamic content. This caused a bottleneck in servers with popular content.
+The above problem led to the development of a new solution called Content Delivery Network.\\
+%\subsection{What is a CDN?}
 A Content Delivery Network (CDN) is a large network of distributed storage servers which cash the content in multiple locations widely spread. 
-\subsection{How does it Work?}
-A 
-\subsection{What are the Advantages?}
+
+This reduces packet losses, latency and total amount of traffic in the network as shown in the diagram. It also provides redundancy.
+%\subsection{How does it Work?}
+
+\subsection{Purpose} %Prop—sito do paper
+	1 - overview das 3 arquitecturas principais
+		Objetivo do paper - num œnico texto (organizar informa‹o)
+		(No fim da intro)
+			- impacto das CDN na sociedade (‰mbitos de aplica‹o)
+			- dado o impacto social das CDN => Ž importante reduzir os custos associados ‡s CDN (infraestruturas) de forma a permitir que um numero maior de empresas (de pequena e media dimens‹o) ou particulares possam usufruir delas. =>impacto Redu‹o da carga nas internet
+
 	
-	%-Redundancy (caso desastre natural, ex.: incendio uMinho)
-	%-Absorve melhor ataques DDoS
-	%-Cheap to get going (pay as you go) no need for big investment at beguinning
-\subsection{What are the Desadvantages?}
-	% Provider End (CDN Proviedr)
-	% Client End (Content Provider)
-	%-Usually expensive (due to large distributed infrastructure (high mainenece costs))
-	%-Lack of standards and Norms => hard to change provider
+
 
 
 %------ MULTI LINE COMENT -------
@@ -96,31 +98,19 @@ A
 Netflix FHD 5Mbit/seg
 	   UHD 25Mbit/seg
 
+What are the Advantages?
+	% - Low latency - Content cashed close to consumer
+	% - Redundancy - In case of natural disaster (ex.: incendio uMinho)
+	% - Safer - Against (DoS) Attacks & Protects origin.
+	% - Cheap to get going (pay as you go) no need for big investment at beguinning
+	% - Capacity on Demand - Dominos friday noght
 
-%UNCOMMENT se necess‡rio
-%De acordo com o ilustrado na Figura~\ref{fig:controller}
-% Exemplo para inser‹o de uma figura
-%\begin{figure}
-%\begin{center}
-%\includegraphics[scale=0.40]{figura.pdf} 
-%\end{center}
-%\caption{\label{fig:controller}Architecture of the unified QoS metric fuzzy controller.}
-%\end{figure} 
+
+
+
 
 According to Table~\ref{tab:TabelaExemplo}...
 
-% Exemplo de uma tabela com duas colunas
-\begin{figure}
-\centering
-\begin{tabular}{|c|c|}\hline
-(a) Delay and jiiter & (b) Delay and loss \\ \hline
-
-(c) Delay and throughput & (d) Jitter and loss \\ \hline
-
-(e) Jitter and throughput & (f) Loss and throughput \\ \hline
-\end{tabular}
-\caption{\label{tab:TabelaExemplo}Tabela exemplo.}
-\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Desafios associados}								%(Alfredo)
@@ -135,6 +125,12 @@ According to Table~\ref{tab:TabelaExemplo}...
 	-O paper "Standard IPTV CDN Architecture Interfaces" Fala sobre desafios
 		¼ Falta de standards
 		¼ Incompatibilidade entre as CDNs existentes (impossibilita a mobilidade)
+		
+	{What are the Disadvantages?}
+	% Provider End (CDN Proviedr)
+	% Client End (Content Provider)
+	%-Usually expensive (due to large distributed infrastructure (high mainenece costs))
+	%-Lack of standards and Norms => hard to change provider
 \fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Arquiteturas relevantes na ‡rea}						%(Axel)
@@ -150,6 +146,7 @@ According to Table~\ref{tab:TabelaExemplo}...
 		CDN Comercial (Uses CDN Servers at ISPs to provide content)
 		CDN P2P (Uses Both Dedicated Servers and Peer-user-owned Computers)
 		(Hybrid) DCDN [Distributed CDN]
+		-justificacao- baixa de precos e acessivel a + gente
 \fi 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
