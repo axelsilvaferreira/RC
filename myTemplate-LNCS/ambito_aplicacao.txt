@@ -1,0 +1,20 @@
+Âmbito de Aplicação
+===================
+
+Desde o streaming de vídeo de alta qualidade, às aplicações
+online de tempo real, o modo básico de funcionamento das CDNs
+é idêntico. Ao invés da típica relação binária entre cliente-
+-servidor, o modelo proposto pelas CDNs foca-se na partilha
+dos vários recursos entre servidores para garantir ao
+utilizador um acesso mais rápido e eficiente dos conteúdos.
+
+Deste modo, numa típica aplicação de uma CDN, relacionar-se-ão
+três entidades distintas:
+ * Um provedor de conteúdos, responsável pela gestão e criação
+dos mesmos.
+ * Uma rede de servidores "substitutos" (surrogate?) com conteúdo
+replicado do provedor de conteúdos, espalhados geograficamente
+por diversos locais do mundo.
+ * Um utilizador, receptor de conteúdos
+
+[Imagem sobre CDNs]
