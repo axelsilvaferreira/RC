@@ -1,0 +1,34 @@
+------------------Onde colocar os CDN servers e pq?--------------------------
+
+Although the CDN brings mostly advantages to clients it has also some drawbacks and disadvantages that still need to be improve.
+
+- Location: 
+The CDN servers need to be placed very carefully. It is pointless to utilize a CDN that is a significant distance from users, which will give low performance. 
+It is wise to put CDN servers closer to big cities or places with a lot of population.
+
+-  Huge infrastructural cost: 
+This problem shows up mostly in the commercial architecture because the expensive financial cost of server renting
+due to large distributed infrastructure. Therefore only big companies like Akamai (leading company in this area) 
+can afford it. Because of this the fees associated with the service can be really high so it is not finnancially
+viable for individual content providers to set up their own server networks.
+Also because of the cost there is a need for much reliable, responsible and scalable architecture.
+
+- Content reception: 
+In the academic architecture (p2p) the biggest disadvantage is that availability and quality of the content reception
+depends on content providers that are volunteers and therefore don't follow a clear set of rules, which makes it hard
+to maintenance and support end users.
+
+- Lack of standards: 
+As said before, there is not a standard specification of CDN interfaces so the solutions given by network equipment
+vendors are usually based on proprietary interfaces and equipment. This makes the choice of one solution risky: the evolution of a 
+CDN infrastructure often relies on the chosen CDN solution provider. The compatibility with another solution is rare wich makes it
+hard to change provider
+This often causes incompability between the existing CDNs which causes lack of mobility.
+This problem is already being solved as many big companies are actively contributing to the specification in order to guarantee
+that future CDN solutions are compatible with the architecture requirements.
+
+- Other minor drawbacks: customer's response time can be affected by traffic from other clients.comerciais!!!!!! ao contrario nas academicas. mas fica mais lento se o conteudo for pouco
+popular.
+                         not having direct control of the CDN servers
+                         The acess to the content is not a relation client-server, this may cause latency in the content distribution
+
