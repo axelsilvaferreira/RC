@@ -12,7 +12,7 @@ Deste modo, numa típica aplicação de uma CDN, relacionar-se-ão três
 entidades distintas:
  * Um **provedor de conteúdos**, responsável pela gestão e criação dos
    mesmos.
- * Uma **rede de servidores "substitutos"** (surrogate?) com conteúdo
+ * Uma **rede de servidores "substitutos"** ~~(surrogate?)~~ com conteúdo
    replicado do provedor de conteúdos, espalhados geograficamente
    por diversos locais do mundo.
  * Um conjunto de **utilizadores** distintos, receptores de conteúdos.
@@ -82,7 +82,7 @@ apropriado (sendo esta escolha efectuada através de um algoritmo
 baseado nas características da rede, proximidade entre servidor e
 cliente, entre outros...).
 
-[Imagem de uma rede de servidores "surrogate"]
+~~[Imagem de uma rede de servidores "surrogate"]~~
 
 ## Sincronização entre servidores
 
@@ -115,7 +115,7 @@ informação, pois:
    recuperados a partir de outro servidor);
 
  * são **mais resistentes** a ataques de "bruta força" (tais como 
-   `DDos`[breve descrição sobre DDos?]), pois o tráfego excessivo
+   `DDos`~~[breve descrição sobre DDos?]~~), pois o tráfego excessivo
    produzido por estes ataques pode ser canalizado para os servidores
    substitutos, reduzindo substancialmente a carga de cada um;
 
