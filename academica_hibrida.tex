@@ -1,0 +1,184 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\title{[RC] CDN}
+\author{afonsojoao96 }
+\date{October 2015}
+
+\begin{document}
+
+\section{Academic Architecure (peer-to-peer)}
+As said before \emph{CDN Commercial Architecture} brings mostly advantages to
+clients but it also comes with it's disadvantages that still
+need to be improve. 
+
+The main disadvantage of this architecture is the high financial cost. This
+happens due to the large distributed infrastructure that causes expensive
+financial cost of server renting. Therefore only big companies like \emph{Akamai}
+(leading company in this area) can afford it, making de \texttt{CDN} market very
+centralized and consequently making the fees associated with the service
+really high. As a result, small and medium sized Internet content providers
+are not allowed to grow because they are not in a financially viable position
+to rent the services of commercial \texttt{CDN} providers. Only large firms can
+afford it.
+
+
+In order to improve this big disadvantage another architecture was implemented:
+the \emph{Academic Architecture}.
+
+\subsection{Âmbitos de aplicação}
+
+Contrary to the commercial architectures, \emph{academic} ones are about
+non-profit peer-to-peer architectures, where each user shares a  little of the
+machine's resources (memmory, CPU cicles, etc...) with the remaining
+(intervenientes). In other words, this \emph{peer-to-peer} architecture
+creates a distributed storage medium that allows the search, the publishing
+and recovery of files by members of the network.
+
+\subsubsection{Principais vantagens}
+
+This alternative makes the network independent from ??entrepreneurial?? servers,
+which makes it singnificantly cheaper (the price to pay is the small shared resources).
+
+Another advantage of this architecture comes from the increased quality and speed
+of the network in proportion to the number of users, i. e., the more users it has,
+the faster and the more reliable it becomes. 
+For instance, high quality streaming to a great number of users may benefit from
+using an \emph{academic architecture}, as the provider of that same stream won't
+have to deal with the cost of renting a server and, beyond that, the high number
+of users will guarantee a wide array of available resources to a global video
+transmission.  
+
+\subsection{Desafios associados}
+Despite being better,when it comes to costs,
+than the previous option, it still has some disadvantages.
+The biggest disadvantage is that availability and quality of the content
+reception depends on content providers that are volunteers and therefore don't
+follow a clear set of rules causing a lack of standard specification of
+\texttt{CDN} interfaces.
+Consequently, this makes it hard to maintenance and support end users.
+
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hybrid Architecture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+As it has been shown, both \emph{comercial} architecture and 
+\emph{academic} architecture present some drawbacks that may 
+??make unviable?? it's utilization in medium scale. If on one hand,
+\emph{commercial} architecture has it's cost only viable for 
+large scale aplications, on the other hand the \emph{academic}
+one is dependant on the number and quality of it's \emph{peers}
+which can cause some instability and lack of sturdy.
+In this way, it becomes central to look for more reliable alternatives
+that can combine \emph{the best of both worlds}. A currently already
+proposed architecture is the ``Distributed Content Delivery Networks''
+\texttt{DCDN}, which is an hybrid model that is between 
+\emph{comercials} and \emph{academics} \texttt{CDN}.
+
+
+
+
+\subsection{Âmbitos de Aplicação}
+
+\subsubsection{Framework}
+The \texttt{DCDN} are composed by a well defined hierarchical structure
+that allows a better relationship among the network's elements.
+This way, it is possible to defined to following entities (from higher
+to the lower level of the hierarchy):
+
+% Talvez fosse importante pôr a imagem que está no paper,
+% dá para perceber muito melhor a hierarquia e a distribuição
+% de conteúdo nem que fosse para a apresentação
+
+\begin{itemize}
+\item \textbf{Content provider} - creator and manager of the shared content;
+
+\item \textbf{Administrators} - a group of users with privileges on the 
+network responsible for the network's maintenance and support
+
+\item \textbf{Servers} - a set of servers, that are utilized, not to
+data storage, but for the efficient distribution of network content.
+They can be \emph{Master} tipe (directly connected to the
+\emph{content provider}, distributing the content by the various regions
+where the \texttt{CDN} acts) or \emph{Local} (connected to the 
+\emph{master servers} and  channel the content to the \emph{surrogates}
+acting on a closer level to the client).
+
+\item \textbf{Surrogates} - set of users of P2P network whose
+resources are shared;
+
+\item \textbf{Client} - final entity, that gets the content;
+
+\end{itemize}
+
+
+
+\subsubsection{Método de Distribuição do Conteúdo}
+
+Given that the main point of \texttt{DCDN} is to optimize the content acess
+and minimize it's costs, it makes sense that the content replicas
+are as close as possible to the client, i.e., on the \emph{surrogates}.
+This way, content distribution is made sequentially in the following way:
+\begin{enumerate}
+
+\item The \emph{content providers} ask permission to 
+\emph{administrators} to insert a new content on the network;
+
+\item If the request is successful, \emph{master} servers send
+the updated content to the \emph{local} servers and from them to 
+the \emph{surrogates};
+
+\item At the same time that the content is sent, servers update their
+records with the same contents being that the \emph{master} will own more general data
+(like the network area where the content is distributed) 
+and the \emph{local} more specific informations (i.e, that \emph{surrogates}
+are in possession of the contents);
+
+\item When there is an content access request by the 
+\emph{client}, the \emph{local} server will choose the valid \emph{surrogates}
+for the content share. This way, this is distributed between the
+\emph{surrogates} and the \emph{client} through the \emph{peer-to-peer} network.
+\end{enumerate}
+
+
+
+\subsubsection{Principais Vantagens}
+
+The main advantage of this architecture, when compared to the \emph{comercial},
+is it's reduced cost of implementation (because there is a need 
+of much less servers).
+
+When compared to the \emph{academic} architecture, this model assures a
+better content stability and availability, for it does not depend 
+only on the volunteer \emph{peer-to-peer} effort. 
+
+With this architecture becomes also possible to restrict the content
+with the client's location, because the content distribution is made
+by the \emph{master} and \emph{local} servers. This way, if the 
+\emph{content providers} intend that a specific content will only be
+accessible from determined place, the content will only be sent to
+that region's servers, therefore preventing other region's users
+to access it.
+
+
+\subsection{Desafios Associados}
+
+This architecture has some drawbacks, the main being that this is
+only an hypothetical model, with few or none real implementation
+and, consequently is a little tested platform.
+
+Relatively to the \emph{academic} and \emph{comercial} \texttt{CDN},
+the \texttt{DCDN} adds some levels of complexity to the structure and
+hierarchy, wich may difficult it's physical implementation.
+
+Once more, the lack of standards to the \texttt{CDN} is also
+a drawback that must be deal with as quicly as possible.
+
+
+\end{document}
