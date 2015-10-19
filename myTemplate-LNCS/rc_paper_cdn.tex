@@ -43,11 +43,11 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%---------------- ABSTRACT							%()
+%---------------- ABSTRACT							%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-This paper starts by introducing the problems that led to the development of CDNs. Following the three main different architectures: Traditional Commercial CDNs, Peer-to-Peer CDNs and Hybrid CDNs. For each architecture, are presented the advantages, disadvantages, technical challenges and applications.
-
+Given the diversity of existing Content Delivery Networks (CDN) architectures and the lack of a reference explicitly organising this information, this paper intends to overview three main CDN architectures. A description of Traditional Commercial \textit{CDN}s, Peer-to-Peer (P2P) \textit{CDN}s and Hybrid \textit{CDN}s is presented. For each architecture, the advantages, disadvantages, technical challenges and application scopes are presented.
+Implications for further research and practice are discussed.
 \end{abstract}
 %----------------
 
@@ -56,36 +56,36 @@ This paper starts by introducing the problems that led to the development of CDN
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}									%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%According to Table~\ref{tab:TabelaExemplo}...
+%According to Table~\ref{tab:TabelaExemplo} \dots
 
 %\subsection{Context}
 \lettrine[lines=2]{T}{he} Internet has its origins in the early 1980's and presented an exponential growth when commercial companies started to link to the existing academic and military networks during the 90's. As the popularity of the Internet increased the number of devices connected started to see an exponential growth.\\ 
 % \subsection{Problems }
-At that time networks were unreliable and internet communication protocols were designed in a robust fashion. As an example, Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being a very chatty protocol, there are multiple Round-trip Time (RTTs) this causes a latency problem over long distance communication.
+At that time networks were unreliable and Internet communication protocols were designed in a robust fashion. As an example, Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being a very chatty protocol, there are multiple Round-trip Time (RTTs) this causes a latency problem over long distance communication.
 Modern networks are faster and more reliable, but most of the core protocols mentioned above don't take advantage of the increased reliability. %(Due to Backwards compatibility)
 As the Internet role in daily life grew, new technologies star to emerge providing images videos and other dynamic content. This caused a bottleneck in servers with popular content.
 The above problems, led to the development Content Delivery Networks.
 
-%\subsection{What is a CDN?}
-A Content Delivery Network (CDN) is a large network of distributed storage servers which cash the content in multiple locations strategically spread. Traditionally CDN servers are stored in ISP's facilities. This reduces both infrastructural costs to CDN Providers and ISP's costs by keeping popular content local, in contrast to bringing it from another ISP's network.
+%\subsection{What is a \textit{CDN}?}
+A Content Delivery Network ( \textit{CDN}) is a large network of distributed storage servers which cash the content in multiple locations strategically spread. Traditionally \textit{CDN} servers are stored in ISP's facilities. This reduces both infrastructural costs to \textit{CDN} Providers and ISP's costs by keeping popular content local, in contrast to bringing it from another ISP's network.
 
 %\subsection{How does it Work?}
-A CDN works by keeping a copy of the content in different locations. Whenever content is requested, management software calculates the best Server for accessing the content. This reduces distance to server which improves latency and minimizes packet loss. 
+A \textit{CDN} works by keeping a copy of the content in different locations. Whenever content is requested, management software calculates the best Server for accessing the content. This reduces distance to server which improves latency and minimizes packet loss. 
 Since the calculations are dynamic, in case of a server malfunction another Server is chosen, providing redundancy.
-%\subsection{CDN Service vs in House Solution}
-Traditional CDN business model target bandwidth as a cost factor. This brings two advantages over a 'In House' solution:
+%\subsection{ \textit{CDN} Service vs in House Solution}
+Traditional \textit{CDN} business model target bandwidth as a cost factor. This brings two advantages over a 'In House' solution:
 First, there are no initial infrastructural costs, this is a big advantage. An example of the dimension of such structure's size would be Akamai's infrastructure. It is composed by more than 61,000 servers, spread across 1000 networks in 70 countries worldwide\cite{akamai};
 Second, provides bandwidth on demand. In comparison with an 'In House' solution, there is no need to deal with both predictable and unpredictable traffic peaks.
-Due to its large distributed infrastructure, and high bandwidth on demand CDNs are especially well suited to absorve a Denial of Service (DoS) attacks\cite{cdnetworks}.
+Due to its large distributed infrastructure, and high bandwidth on demand \textit{CDN}s are especially well suited to absorve a Denial of Service (DoS) attacks\cite{cdnetworks}.
 
 %\subsection{Costs}
-It is worth noting that CDNs bring cost per performance down. Despite that, CDNs are expensive, and currently are used mostly by big companies. It is imperative that CDN's get cheaper. This will allow more parties to use them, thus enhancing internet experience to the final consumer and reducing total internet traffic at the same time.
+It is worth noting that \textit{CDN}s bring cost per performance down. Despite that, \textit{CDN}s are expensive, and currently are used mostly by big companies. It is imperative that \textit{CDN}'s get cheaper. This will allow more parties to use them, thus enhancing Internet experience to the final consumer and reducing total Internet traffic at the same time.
 % Exemplo (Âmbito de aplicação) Netflix
-An example of a service using a CDN (Amazon EC2) would be the popular movie streaming service Netflix.
+An example of a service using a \textit{CDN} (Amazon EC2) would be the popular movie streaming service Netflix.
 
 
 \subsection{Purpose} %Propósito do paper
-This paper's purpose is to provide organised information about different CDN architectures: the traditional large server infrastructure CDN, the Peer to Peer (P2P) CDN and a new trend of Hybrid architecture which relies on both Servers and Peers. 
+This paper's purpose is to provide organised information about different \textit{CDN} architectures: the traditional large server infrastructure \textit{CDN}, the Peer to Peer (P2P) \textit{CDN} and a new trend of Hybrid architecture which relies on both Servers and Peers. 
 
 
 
@@ -93,17 +93,17 @@ This paper's purpose is to provide organised information about different CDN arc
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Academic CDN (P2P)}							%(Afonso)
+\section{Academic \textit{CDN} (P2P)}						%(Afonso)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 As said before \emph{CDN Commercial Architecture} brings mostly advantages to clients but it comes with high financial cost. This
 happens due to the large distributed infrastructure that causes expensive
 financial cost of server renting. Therefore only big companies like \emph{Akamai}
-(leading company in this area) can afford it, making de \texttt{CDN} market very
+(leading company in this area) can afford it, making de \textit{CDN} market very
 centralised and consequently making the fees associated with the service
 really high. As a result, small and medium sized Internet content providers
 are not allowed to grow because they are not in a financially viable position
-to rent the services of commercial \texttt{CDN} providers. Only large firms can
+to rent the services of commercial \textit{CDN} providers. Only large firms can
 afford it.
 
 
@@ -112,12 +112,9 @@ the \emph{Academic Architecture}.
 
 \subsection{Aplication Scope}
 
-Contrary to the commercial architectures, \emph{academic} ones are about
-non-profit peer-to-peer architectures, where each user shares a  little of the
-machine's resources (memory, CPU cycles, etc...) with the remaining
-(intervenientes). In other words, this \emph{peer-to-peer} architecture
-creates a distributed storage medium that allows the search, the publishing
-and recovery of files by members of the network.
+In contrast to commercial architectures, \emph{academic} (P2P) ones are free, both in terms of profit and advertisement. \emph{peer-to-peer} architectures, where each user shares a some of their machine's resources (Storage, CPU cycles, \dots) with the remaining
+peers. 
+In other words, P2P architecture creates a distributed storage medium that facilitates the search, the publishing and recovery of files by members of the network.
 
 \subsubsection{Main Advantages}
 
@@ -131,7 +128,7 @@ For instance, high quality streaming to a great number of users may benefit from
 using an \emph{academic architecture}, as the provider of that same stream won't
 have to deal with the cost of renting a server and, beyond that, the high number
 of users will guarantee a wide array of available resources to a global video
-transmission.  
+transmission.
 
 \subsection{Associated Challenges}
 Despite being better,when it comes to costs,
@@ -139,7 +136,7 @@ than the previous option, it still has some disadvantages.
 The biggest disadvantage is that availability and quality of the content
 reception depends on content providers that are volunteers and therefore don't
 follow a clear set of rules causing a lack of standard specification of
-\texttt{CDN} interfaces.
+\textit{CDN} interfaces.
 Consequently, this makes it hard to maintenance and support end users.
 
 
@@ -148,12 +145,12 @@ Consequently, this makes it hard to maintenance and support end users.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Hybrid CDN Architecture}								%(Alfredo)
+\section{Hybrid \textit{CDN} Architecture}					%(Alfredo)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 As it has been shown, both \emph{comercial} architecture and 
 \emph{academic} architecture present some drawbacks that may 
-??make unviable?? it's utilization in medium scale. If on one hand,
+??make unviable?? it's utilisation in medium scale. If on one hand,
 \emph{commercial} architecture has it's cost only viable for 
 large scale aplications, on the other hand the \emph{academic}
 one is dependant on the number and quality of it's \emph{peers}
@@ -161,8 +158,8 @@ which can cause some instability and lack of sturdy.
 In this way, it becomes central to look for more reliable alternatives
 that can combine \emph{the best of both worlds}. A currently already
 proposed architecture is the ``Distributed Content Delivery Networks''
-\texttt{DCDN}, which is an hybrid model that is between 
-\emph{comercials} and \emph{academics} \texttt{CDN}.
+\texttt{D \textit{CDN}}, which is an hybrid model that is between 
+\emph{comercials} and \emph{academics} \textit{CDN}.
 
 
 
@@ -170,7 +167,7 @@ proposed architecture is the ``Distributed Content Delivery Networks''
 \subsection{Aplication Scope}
 
 \subsubsection{Framework}
-The \texttt{DCDN} are composed by a well defined hierarchical structure
+The \texttt{D \textit{CDN}} are composed by a well defined hierarchical structure
 that allows a better relationship among the network's elements.
 This way, it is possible to defined to following entities (from higher
 to the lower level of the hierarchy):
@@ -189,8 +186,8 @@ network responsible for the network's maintenance and support
 data storage, but for the efficient distribution of network content.
 They can be \emph{Master} tipe (directly connected to the
 \emph{content provider}, distributing the content by the various regions
-where the \texttt{CDN} acts) or \emph{Local} (connected to the 
-\emph{master servers} and  channel the content to the \emph{surrogates}
+where the \textit{CDN} acts) or \emph{Local} (connected to the 
+\emph{master servers} andchannel the content to the \emph{surrogates}
 acting on a closer level to the client).
 
 \item \textbf{Surrogates} - set of users of P2P network whose
@@ -202,9 +199,9 @@ resources are shared;
 
 
 
-\subsubsection{Método de Distribuição do Conteúdo}
+\subsubsection{Content Distribution Method}
 
-Given that the main point of \texttt{DCDN} is to optimize the content acess
+Given that the main point of \texttt{D \textit{CDN}} is to optimize the content acess
 and minimize it's costs, it makes sense that the content replicas
 are as close as possible to the client, i.e., on the \emph{surrogates}.
 This way, content distribution is made sequentially in the following way:
@@ -256,23 +253,23 @@ This architecture has some drawbacks, the main being that this is
 only an hypothetical model, with few or none real implementation
 and, consequently is a little tested platform.
 
-Relatively to the \emph{academic} and \emph{comercial} \texttt{CDN},
-the \texttt{DCDN} adds some levels of complexity to the structure and
+Relatively to the \emph{academic} and \emph{comercial} \textit{CDN},
+the \emph{Distributed CDN (DCDN)} adds some levels of complexity to the structure and
 hierarchy, which may difficult it's physical implementation.
 
-Once more, the lack of standards to the \texttt{CDN} is also
+Once more, the lack of standards to the \textit{CDN} is also
 a drawback that must be deal with as quickly as possible.
 
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Lista de projetos atuais}							%()
+\section{Lista de projetos atuais}							%(Alfredo)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
-The following list contains the most popular CDN service providers. According to \cite{reuters}, Akamai, being the biggest CDN provider, and is responsible for as much as 15\%-30\% of the internet traffic.
+The following list contains the most popular \textit{CDN} service providers. According to \cite{reuters}, Akamai, being the biggest \textit{CDN} provider, and is responsible for as much as 15\%-30\% of the Internet traffic.
 
-Another interesting perspective is to evaluate the offerings available. Most of them are commercial CDNs. 
+Another interesting perspective is to evaluate the offerings available. Most of them are commercial \textit{CDN}s. 
 
 
 -O paper "Standard IPTV CDN Architecture Interfaces" Fala sobre desafios
@@ -287,7 +284,7 @@ Another interesting perspective is to evaluate the offerings available. Most of 
 		Free CDNs
 			BootStrap CDN\\
 			CloudFlare\\
-			CCDN\\
+			C CDN\\
 			Incapsula\\
 			\dots\\
 		Telco CDN\\
@@ -309,10 +306,18 @@ Another interesting perspective is to evaluate the offerings available. Most of 
 \fi
 
 
-\section{Conclusion and Future Work}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion and Future Work}						%(Axel)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
 
 nossa perspetiva
--Arquitectura híbrida 
+-Arquitectura híbrida => Despite the  Further practical testing is needed to take better conclusions
 
 - a contribuição única é o paper focado nos custos gerais em função das diferentes arquiteturas
 
@@ -320,7 +325,7 @@ nossa perspetiva
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%--------------- G L O S S A R I O ----------------%
+%--------------- G L O S S A R I O ----------------%		%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \if
 	CDN - Content-delivery Network
@@ -334,7 +339,7 @@ nossa perspetiva
 	Mirroring -
 \fi	
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%----------- B I B L I O G R A F I A -------------%
+%----------- B I B L I O G R A F I A -------------%			%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Inserir directamente os vários \bibitem 
@@ -347,11 +352,11 @@ nossa perspetiva
 	Erik Nygren, Ramesh K. Sitaraman, and Jennifer Sun.:
 	\newblock {"The Akamai Network: A Platform for High-Performance Internet Applications" (ACM SIGOPS Operating Systems Review, vol. 44, no. 3, July 2010)}
 
-	\bibitem{cdnetworks}
-	"How Content Delivery Networks Work" (http://www.cdnetworks.com/blog/how-content-delivery-networks-work/).	CDNetworks. Retrieved 22 September 2015.
+	\bibitem{ cdnetworks}
+	"How Content Delivery Networks Work" (http://www. \textit{CDN}etworks.com/blog/how-content-delivery-networks-work/).	Networks. Retrieved 22 September 2015.
 
 
-	% Exemplo de  um BibItem 
+	% Exemplo deum BibItem 
 	%	\bibitem{Nguyen99}
 	%	Nguyen, H., Walker, E.:
 	%	\newblock {First course in fuzzy logic}.
@@ -360,13 +365,13 @@ nossa perspetiva
 \end{thebibliography}
 
 
-%%%%%%%%%%%%%%%%%%%% FIGURAS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% FIGURAS %%%%%%%%%%%%%%%%%%%%%%%%%%% %(Axel)
 %\if
 %De acordo com o ilustrado na Figura~\ref{fig:controller}
 % Exemplo para inserção de uma figura
 %\begin{figure}
 %\begin{center}
-%\includegraphics[scale=0.30]{nocdn} 
+%\includegraphics[scale=0.30]{no \textit{CDN}} 
 %\end{center}
 %\caption{\label{fig:controller}Architecture of the unified QoS metric fuzzy controller.}
 %\end{figure} 
@@ -375,7 +380,7 @@ nossa perspetiva
 % Exemplo para inserção de uma figura
 %\begin{figure}
 %\begin{center}
-%\includegraphics[scale=0.30]{cdn} 
+%\includegraphics[scale=0.30]{ \textit{CDN}} 
 %\end{center}
 %\caption{\label{fig:controller}Architecture of the unified QoS metric fuzzy controller.}
 %\end{figure} 
