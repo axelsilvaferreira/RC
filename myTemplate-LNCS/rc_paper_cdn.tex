@@ -18,7 +18,7 @@
 
 \begin{document}
 \mainmatter
-\title{Overview of Content-Delivery Networks Architecture Costs}
+\title{Overview of Content-Delivery Networks Architecture}
 
 \titlerunning{Paper Title}
 
@@ -66,12 +66,14 @@ A Content Delivery Network (CDN) is a large network of distributed storage serve
 %\subsection{How does it Work?}
 A CDN works by keeping a copy of the content in different locations. Whenever content is requested, management software calculates the best Server for accessing the content. This reduces distance to server which improves latency and minimizes packet loss. 
 Since the calculations are dynamic, in case of a server malfunction another Server is chosen, providing redundancy.
-Due to its large distributed infrastructure, and high bandwidth on demand, CDNs are especially well suited to absorve a Denial of Service (DoS) attack.
-
-=> % - Cheap to get going (pay as you go) no need for big investment at 		beguinning
-	% - Capacity on Demand - Dominos friday noght
-		-> falar do exemplo da pizza (usar outro exemplo)
-=> % Exemplo (Âmbito de aplicação) Netflix [Tuga IO]
+%\subsection{CDN Service vs in House Solution}
+Traditional CDN business model target bandwidth as a cost factor. This brings two advantages over a 'In House' solution. First, there are no initial infrastructural costs, and second, provides bandwidth on demand. In comparison with an 'In House' solution, there is no need to deal with both predictable and unpredictable traffic peaks.
+Due to its large distributed infrastructure, and high bandwidth on demand CDNs are especially well suited to absorve a Denial of Service (DoS) attacks.
+%\subsection{Costs}
+One thing to keep in mind 
+With all the above in mind, CDNs < (costs + performance)
+still expensive
+% Exemplo (Âmbito de aplicação) Netflix [Tuga IO]
 	exemplo akamai  
 		paper: the-akamai-network-a-platform-for-high-performance-internet-applications-technical-publication
 
