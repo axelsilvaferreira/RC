@@ -50,14 +50,13 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 	Given the diversity of existing Content Delivery Networks (CDN) architectures and the lack of a reference explicitly organising this information, this paper intends to overview three main CDN architectures. A description of Traditional Commercial \textit{CDN}s, Peer-to-Peer (P2P) \textit{CDN}s and Hybrid \textit{CDN}s is presented. For each architecture, the advantages, disadvantages, technical challenges and application scopes are presented.
 	Implications for further research and practice are discussed.
 \end{abstract}
-%----------------
 
 
 
 
-
-% \begin{multicols}{2}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 				\begin{multicols}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -103,7 +102,7 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Academic \textit{CDN} P2P}						%(Afonso)
+\section{Academic CDN P2P}						%(Afonso)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	As said before \emph{CDN Commercial Architecture} brings mostly advantages to clients but it comes with high financial cost. This happens due to the large distributed infrastructure that causes huge financial costs. Therefore only companies with large financial resources can afford it, limiting the use of \textit{CDN} services to bigger companies. As a result, individual content creators, as well as smaller and medium sized companies cannot afford the services.
@@ -112,7 +111,7 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 	\subsection{Aplication Scope}
 
-		In contrast to commercial architectures, \emph{academic} ones are free, both in terms of profit and advertisement. \emph{P2P} architectures, where each user shares a some of their machine's resources (Storage, CPU cycles, \dots) with the remaining peers. 
+		In contrast to commercial architectures, \emph{academic} ones are free, both in terms of profit and advertisement. \emph{P2P} architectures, where each user shares some of their machine's resources (Storage, CPU cycles, \dots) with the remaining peers. 
 		In other words, P2P architecture creates a distributed storage medium that facilitates the search, the publishing and recovery of files by members of the network.
 
 		\subsubsection{Main Advantages}
@@ -140,12 +139,12 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 	"Distributed Content Delivery Network" \cite{dcdn} being an example of a Hybrid \textit{CDN} that doesn't use storage servers.
 
 	\subsection{Aplication Scope}
-		This architecture model could used in any situation since it delivers both reasonable costs and guarantees reasonable performance at all times.
+		This architecture model could be used in any situation since it delivers both reasonable costs and guarantees reasonable performance at all times.
 	\subsection{Example of a Hybrid CDN}
 	The following example explanes the model presented in M. Jaison Paul and K. Ibrahim's paper \cite{dcdn}.
 		\subsubsection{Framework}
 			The \texttt{DCDN} are composed by a well defined hierarchical structure that allows a better relationship among the network's elements.
-			This way, it is possible to defined to following entities (from higher to the lower level of hierarchy):
+			This way, it is possible to define the following entities (from higher to the lower level of hierarchy):
 			% Talvez fosse importante p™r a imagem que est‡ no paper,
 			% d‡ para perceber muito melhor a hierarquia e a distribui‹o
 			% de conteœdo nem que fosse para a apresenta‹o
@@ -153,10 +152,9 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 			\begin{itemize}
 				\item \textbf{Content provider} - creator and manager of the shared content;
 		
-				\item \textbf{Administrators} - a group of users with privileges on the network responsible for the network's maintenance and support
+				\item \textbf{Administrators} - a group of users with privileges on the network responsible for the network's maintenance and support;
 		
-				\item \textbf{Servers} - a set of servers, that are utilized, not to data storage, but for the efficient distribution of network content.
-				They can be \emph{Master} tipe (directly connected to the \emph{content provider}, distributing the content by the various regions where the \textit{CDN} acts) or \emph{Local} (connected to the \emph{master servers} andchannel the content to the \emph{surrogates} acting on a closer level to the client).
+				\item \textbf{Servers} - a set of servers, that are used, not to data storage, but for the efficient distribution of network content. They can be \emph{Master} type (directly connected to the \emph{content provider}, distributing the content by the various regions where the \textit{CDN} acts) or \emph{Local} (connected to the \emph{master servers} and channel the content to the \emph{surrogates} acting on a closer level to the client).
 		
 				\item \textbf{Surrogates} - set of users of P2P network whose resources are shared;
 		
@@ -190,7 +188,7 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 		This architecture has some drawbacks, the main being that this is only an hypothetical model, based on simulations and few to none real world implementations.
 		Another problem spotted, compared to the \emph{academic} and \emph{comercial} \textit{CDNs}, \emph{Distributed CDN (DCDN)} adds some levels of complexity with hierarchy, which may difficult a physical implementation.
-		The migration process from a CDN to another is unecessarily difficult due to incompatibility between different CDN providers. The lack of standards pay a big role here that should be dealt with as soon as possible\cite{IPTV}.
+		The migration process from a CDN to another is unnecessarily difficult due to incompatibility between different CDN providers. The lack of standards pay a big role here that should be dealt with as soon as possible\cite{IPTV}.
 
 
 
@@ -248,18 +246,8 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 
 
-%The following list contains the most popular \textit{CDN} service providers. According to \cite{reuters}, Akamai, being the biggest \textit{CDN} provider, and is responsible for as much as 15\%-30\% of the Internet traffic.
-
-%Another interesting perspective is to evaluate the offerings available. Most of them are commercial \textit{CDN}s. 
 
 \if
--O paper "Standard IPTV CDN Architecture Interfaces" Fala sobre desafios
-		¼ Falta de standards
-		¼ Incompatibilidade entre as CDNs existentes (impossibilita a mobilidade)
-		%-Lack of standards and Norms => hard to change provider
-
-	
-
 	Cloud Content Delivery Networks
 	
 		Free CDNs
@@ -293,7 +281,7 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 \section{Conclusion and Future Work}						%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	Based on the above analysis, Comercial CDNs will continue to be needed for the near future because of its ability to deliver uncompromised performance\cite{hcdn}. On the other hand, P2P architectures are most likely to be replaced with DCDN architecture, as soon an open source DCDN alternative is available. The later will be possible as soon as infrastructure required is standardised and made available\cite{dcdn}.
+	Based on the above analysis, Comercial CDNs will continue to be needed for the near future because of its ability to deliver uncompromised performance\cite{hcdn}. On the other hand, P2P architectures are most likely to be replaced with DCDN architecture, as soon as an open source DCDN alternative is available. The later will be possible as soon as infrastructure required is standardised and made available\cite{dcdn}.
 	Despite the promising theoretical results, further practical testing is needed to take better conclusions.
 
 
