@@ -54,6 +54,13 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 
 
+
+
+% \begin{multicols}{2}
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}									%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -125,21 +132,24 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Hybrid \textit{CDN} Architecture}					%(Alfredo)
+\section{\textit{Hybrid CDN} Architecture}					%(Alfredo)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	As it has been shown, both \emph{comercial} architecture and \emph{academic} architecture present some drawbacks that may ??make unviable?? it's utilisation in medium scale. If on one hand, \emph{commercial} architecture has it's cost only viable for large scale aplications, on the other hand the \emph{academic} one is dependant on the number and quality of it's \emph{peers} which can cause some instability and lack of sturdy. In this way, it becomes central to look for more reliable alternatives that can combine \emph{the best of both worlds}. A currently already proposed architecture is the ``Distributed Content Delivery Networks'' \texttt{D \textit{CDN}}, which is an hybrid model that is between \emph{comercials} and \emph{academics} \textit{CDN}.
+	As shown before, both \emph{comercial} architecture and \emph{academic} architecture present some drawbacks. \emph{Commercial} architecture is cost-effective for large scale applications only, and \emph{Academic} architecture's quality is dependant on the number of \emph{peers}. The solution to solving the above problems might be a compromise between both.
+	Currently, there are a number of Hybrid Content Delivery Networks propositions. This alternative provides a solution for both cost reduction and performance guarantee. It works as a smaller CDN of distributed low cost nodes that dynamically calculate and accelerate content, and might or might not have auxiliary storage servers as backup, and use Peers's storage resources for mirroring content.
+	"Distributed Content Delivery Network" \cite{dcdn} being an example of a Hybrid \textit{CDN} that doesn't use storage servers.
 
 	\subsection{Aplication Scope}
-
+		This architecture model could used in any situation since it delivers both reasonable costs and guarantees reasonable performance at all times.
+	\subsection{Example of a Hybrid CDN}
+	The following example explanes the model presented in M. Jaison Paul and K. Ibrahim's paper \cite{dcdn}.
 		\subsubsection{Framework}
-			The \texttt{D \textit{CDN}} are composed by a well defined hierarchical structure that allows a better relationship among the network's elements.
-			This way, it is possible to defined to following entities (from higher to the lower level of the hierarchy):
-		
+			The \texttt{DCDN} are composed by a well defined hierarchical structure that allows a better relationship among the network's elements.
+			This way, it is possible to defined to following entities (from higher to the lower level of hierarchy):
 			% Talvez fosse importante p™r a imagem que est‡ no paper,
 			% d‡ para perceber muito melhor a hierarquia e a distribui‹o
 			% de conteœdo nem que fosse para a apresenta‹o
-		
+			
 			\begin{itemize}
 				\item \textbf{Content provider} - creator and manager of the shared content;
 		
@@ -170,22 +180,20 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 
 
-		\subsubsection{Main Advantages}
+	\subsection{Main Advantages}
 
-			The main advantage of this architecture, when compared to the \emph{comercial}, is it's reduced cost of implementation (because there is a need of much less servers).
-			
-			When compared to the \emph{academic} architecture, this model assures a better content stability and availability, for it does not depend only on the volunteer \emph{P2P} effort. 
-
-			With this architecture becomes also possible to restrict the content with the client's location, because the content distribution is made by the \emph{master} and \emph{local} servers. This way, if the \emph{content providers} intend that a specific content will only be accessible from determined place, the content will only be sent to that region's servers, therefore preventing other region's users to access it.
+		The main advantage of this architecture, when compared to the \emph{comercial}, are the reduced costs of implementation due to the lack of storage servers requirement.
+		When compared to the \emph{academic} architecture, this model assures a better content stability and availability and better rout calculation, since it does not depend solely on Peers availability. 
 
 
 	\subsection{Associated Challenges}
 
-		This architecture has some drawbacks, the main being that this is only an hypothetical model, with few or none real implementation and, consequently is a little tested platform.
+		This architecture has some drawbacks, the main being that this is only an hypothetical model, based on simulations and few to none real world implementations.
+		Another problem spotted, compared to the \emph{academic} and \emph{comercial} \textit{CDNs}, \emph{Distributed CDN (DCDN)} adds some levels of complexity with hierarchy, which may difficult a physical implementation.
+		The lack of standards pay a big role here that should be dealt with as soon as possible.
 
-		Relatively to the \emph{academic} and \emph{comercial} \textit{CDN}, the \emph{Distributed CDN (DCDN)} adds some levels of complexity to the structure and hierarchy, which may difficult it's physical implementation.
 
-		Once more, the lack of standards to the \textit{CDN} is also a drawback that must be deal with as quickly as possible.
+
 
 
 
@@ -194,18 +202,64 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 \section{Lista de projetos atuais}							%(Alfredo)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
 
-The following list contains the most popular \textit{CDN} service providers. According to \cite{reuters}, Akamai, being the biggest \textit{CDN} provider, and is responsible for as much as 15\%-30\% of the Internet traffic.
+	The following list contains the most popular CDN service providers, almost all of them being commercial CDNs.	This list provides a brief explanation on each CDN specialisation. It is important to keep in mind that this is a brief list containing only a few as an example of the variety of CDN specialisations.
 
-Another interesting perspective is to evaluate the offerings available. Most of them are commercial \textit{CDN}s. 
+	\begin{description}
+		\item[Akamai] \hfill \\
+		It provides content delivery and streaming media services, along with global traffic management. According to \cite{reuters}, Akamai, being the biggest CDN provider, is responsible for as much as 15\%--30\% of the internet traffic.
+
+		\item[AT\&T Intelligent Content Distribution Service] \hfill \\
+		Is responsible for monitoring the original website in content and replicates those changes within minutes on mirror sites across their worldwide networks and data facilities.
+
+		\item[Adero's GlobalWise Network] \hfill \\
+		Is a worldwide network of intelligent, multi-server nodes that include carrier-grade Sun Enterprise servers and best-of-breed software specialised in websites.
+		
+		\item[AppStream's Virtual Hosting Network] \hfill \\
+		Monitors the usage of central databases and applications, segments them, and proactively moves the computing resources to application servers closest to the users that need them.
+
+		\item[CacheFlow] \hfill \\
+		Provides unique solutions for three areas: enterprise, service provider, and e-commerce.
+
+		\item[Digital Island] \hfill \\
+		Provides delivery of all major kinds of content, including streaming media, and features multiple authentication methods to provide secure content delivery.
+ 
+		\item[Dynamai] \hfill \\
+		Caches static plus some dynamic content using a kind of reverse proxy in front of the clients server(s). Ensures updated dynamic content using an event-driven feedback loop that notifies the Dynamai cache when dynamic content is updated.
+
+		\item[Edgix] \hfill \\
+		A satellite-based Internet content delivery company providing high-speed Edge Services to Internet Service Providers worldwide. ISPs gain greater bandwidth efficiency because they are able to offload a significant amount of traffic from their backbone connection to Edgix's network.
+
+		\item[epicRealm] \hfill \\
+		Providing an improvement in the e-business experience for both parties, users experience quicker response times, prioritised transactions and continual communication with their host while businesses serve the freshest content to their customers all the time.
+
+		\item[Mirror Image Internet] \hfill \\
+		Mirror Image Internet provides global content distribution, streaming, and caching services that speed Internet traffic and improve quality of service.
+
+		\item[SolidSpeed Network] \hfill \\
+		SolidSpeed uses intelligent routing and network optimisation to bypass internet bottlenecks. They work to find the most efficient route between customers and content.
+
+		\item[Speedera's Content Delivery Network] \hfill \\
+		Speedera's CDN provides an integrated, innovative and customer-focused service for powering content providers. Content is pushed from web origin sites to caching servers at the "edge" of the Internet, closer to users.
+
+		\item[XOSoft] \hfill \\
+		XOSoft's CloneQuick is the first CDN to employ delta encoding, which sends only the changes of documents. XOSoft combines mirrors and caches to synchronise content worldwide, and deliver fresh content to users quickly.
+
+	\end{description}
 
 
+
+%The following list contains the most popular \textit{CDN} service providers. According to \cite{reuters}, Akamai, being the biggest \textit{CDN} provider, and is responsible for as much as 15\%-30\% of the Internet traffic.
+
+%Another interesting perspective is to evaluate the offerings available. Most of them are commercial \textit{CDN}s. 
+
+\if
 -O paper "Standard IPTV CDN Architecture Interfaces" Fala sobre desafios
 		¼ Falta de standards
 		¼ Incompatibilidade entre as CDNs existentes (impossibilita a mobilidade)
 		%-Lack of standards and Norms => hard to change provider
 
 	
-\if
+
 	Cloud Content Delivery Networks
 	
 		Free CDNs
@@ -261,6 +315,9 @@ Another interesting perspective is to evaluate the offerings available. Most of 
 %----------- B I B L I O G R A F I A -------------%			%(Axel)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%  \end{multicols}
+
+
 % Inserir directamente os v‡rios \bibitem 
 \begin{thebibliography}{1}
 	\bibitem{reuters}
@@ -282,6 +339,9 @@ Another interesting perspective is to evaluate the offerings available. Most of 
 	Hai Jiang ; Jun Li ; Zhongcheng Li ; Xiangyu Bai:
 	\newblock {"Performance Evaluation of Content Distribution in Hybrid CDN-P2P Network" (Future Generation Communication and Networking, 2008. FGCN '08. Second International Conference Vol 1)}
 	
+	\bibitem{IPTV} % Fala sobre a falta de standards
+	Menai, M.F.; Fieau, F.; Souk, A.; Jaworski, S.:
+	\newblock{"Demonstration of Standard IPTV Content Delivery Network Architecture Interfaces: Prototype of Standardized IPTV Unicast Content Delivery Server Selection Mechanisms" (http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=4785012)}
 
 	% Exemplo deum BibItem 
 	%	\bibitem{Nguyen99}

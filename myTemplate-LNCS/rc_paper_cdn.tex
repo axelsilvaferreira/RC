@@ -136,20 +136,20 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	As shown before, both \emph{comercial} architecture and \emph{academic} architecture present some drawbacks. \emph{Commercial} architecture is cost-effective for large scale applications only, and \emph{Academic} architecture's quality is dependant on the number of \emph{peers}. The solution to solving the above problems might be a compromise between both.
-	Currently, there are a number of Hybrid Content Delivery Networks propositions. "Distributed Content Delivery Network" \cite{dcdn} being one of them. 
-	
-	 becomes central to look for more reliable alternatives that can combine \emph{the best of both worlds}. A currently already proposed architecture is the ``Distributed Content Delivery Networks'' \texttt{D \textit{CDN}}, which is an hybrid model that is between \emph{comercials} and \emph{academics} \textit{CDN}.
+	Currently, there are a number of Hybrid Content Delivery Networks propositions. This alternative provides a solution for both cost reduction and performance guarantee. It works as a smaller CDN of distributed low cost nodes that dynamically calculate and accelerate content, and might or might not have auxiliary storage servers as backup, and use Peers's storage resources for mirroring content.
+	"Distributed Content Delivery Network" \cite{dcdn} being an example of a Hybrid \textit{CDN} that doesn't use storage servers.
 
 	\subsection{Aplication Scope}
-
+		This architecture model could used in any situation since it delivers both reasonable costs and guarantees reasonable performance at all times.
+	\subsection{Example of a Hybrid CDN}
+	The following example explanes the model presented in M. Jaison Paul and K. Ibrahim's paper \cite{dcdn}.
 		\subsubsection{Framework}
-			The \texttt{D \textit{CDN}} are composed by a well defined hierarchical structure that allows a better relationship among the network's elements.
-			This way, it is possible to defined to following entities (from higher to the lower level of the hierarchy):
-		
+			The \texttt{DCDN} are composed by a well defined hierarchical structure that allows a better relationship among the network's elements.
+			This way, it is possible to defined to following entities (from higher to the lower level of hierarchy):
 			% Talvez fosse importante pôr a imagem que está no paper,
 			% dá para perceber muito melhor a hierarquia e a distribuição
 			% de conteúdo nem que fosse para a apresentação
-		
+			
 			\begin{itemize}
 				\item \textbf{Content provider} - creator and manager of the shared content;
 		
@@ -180,22 +180,17 @@ e-mail: \{a70387,a71655,a53064\}@alunos.uminho.pt
 
 
 
-		\subsubsection{Main Advantages}
+	\subsection{Main Advantages}
 
-			The main advantage of this architecture, when compared to the \emph{comercial}, is it's reduced cost of implementation (because there is a need of much less servers).
-			
-			When compared to the \emph{academic} architecture, this model assures a better content stability and availability, for it does not depend only on the volunteer \emph{P2P} effort. 
-
-			With this architecture becomes also possible to restrict the content with the client's location, because the content distribution is made by the \emph{master} and \emph{local} servers. This way, if the \emph{content providers} intend that a specific content will only be accessible from determined place, the content will only be sent to that region's servers, therefore preventing other region's users to access it.
+		The main advantage of this architecture, when compared to the \emph{comercial}, are the reduced costs of implementation due to the lack of storage servers requirement.
+		When compared to the \emph{academic} architecture, this model assures a better content stability and availability and better rout calculation, since it does not depend solely on Peers availability. 
 
 
 	\subsection{Associated Challenges}
 
-		This architecture has some drawbacks, the main being that this is only an hypothetical model, with few or none real implementation and, consequently is a little tested platform.
-
-		Relatively to the \emph{academic} and \emph{comercial} \textit{CDN}, the \emph{Distributed CDN (DCDN)} adds some levels of complexity to the structure and hierarchy, which may difficult it's physical implementation.
-
-		Once more, the lack of standards to the \textit{CDN} is also a drawback that must be deal with as quickly as possible.
+		This architecture has some drawbacks, the main being that this is only an hypothetical model, based on simulations and few to none real world implementations.
+		Another problem spotted, compared to the \emph{academic} and \emph{comercial} \textit{CDNs}, \emph{Distributed CDN (DCDN)} adds some levels of complexity with hierarchy, which may difficult a physical implementation.
+		The lack of standards pay a big role here that should be dealt with as soon as possible.
 
 
 
