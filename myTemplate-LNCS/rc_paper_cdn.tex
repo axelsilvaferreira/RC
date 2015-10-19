@@ -54,9 +54,8 @@ Resumo...
 %\subsection{Context}
 \lettrine[lines=2]{T}{he} Internet has its origins in the early 1980's and presented an exponential growth when commercial companies started to link to the existing academic and military networks during the 90's. As the popularity of the Internet increased the number of devices connected started to see an exponential growth.\\ 
 % \subsection{Problems }
-At that time [analogue] networks were unreliable and internet communication protocols were designed in a robust fashion. As an example, Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being a very chatty protocol, there are multiple Round-trip Time (RTTs) this causes a latency problem over long distance communication.
-Modern [digital] networks are faster and more reliable, but most of the core protocols mentioned above don't take advantage of the increased reliability.
-% @@@@ DUE TO Backwards compatibility ? @@@@
+At that time networks were unreliable and internet communication protocols were designed in a robust fashion. As an example, Hypertext Transfer Protocol (HTTP) was designed to survive multiple packet losses and thus being a very chatty protocol, there are multiple Round-trip Time (RTTs) this causes a latency problem over long distance communication.
+Modern networks are faster and more reliable, but most of the core protocols mentioned above don't take advantage of the increased reliability. %(Due to Backwards compatibility)
 As the Internet role in daily life grew, new technologies star to emerge providing images videos and other dynamic content. This caused a bottleneck in servers with popular content.
 The above problems, led to the development Content Delivery Networks.
 
@@ -67,33 +66,20 @@ A Content Delivery Network (CDN) is a large network of distributed storage serve
 A CDN works by keeping a copy of the content in different locations. Whenever content is requested, management software calculates the best Server for accessing the content. This reduces distance to server which improves latency and minimizes packet loss. 
 Since the calculations are dynamic, in case of a server malfunction another Server is chosen, providing redundancy.
 %\subsection{CDN Service vs in House Solution}
-Traditional CDN business model target bandwidth as a cost factor. This brings two advantages over a 'In House' solution. First, there are no initial infrastructural costs, and second, provides bandwidth on demand. In comparison with an 'In House' solution, there is no need to deal with both predictable and unpredictable traffic peaks.
-Due to its large distributed infrastructure, and high bandwidth on demand CDNs are especially well suited to absorve a Denial of Service (DoS) attacks.
+Traditional CDN business model target bandwidth as a cost factor. This brings two advantages over a 'In House' solution:
+First, there are no initial infrastructural costs, this is a big advantage. An example of the dimension of such structure's size would be Akamai's infrastructure. It is composed by more than 61,000 servers, spread across 1000 networks in 70 countries worldwide\cite{akamai};
+Second, provides bandwidth on demand. In comparison with an 'In House' solution, there is no need to deal with both predictable and unpredictable traffic peaks.
+Due to its large distributed infrastructure, and high bandwidth on demand CDNs are especially well suited to absorve a Denial of Service (DoS) attacks\cite{cdnetworks}.
+
 %\subsection{Costs}
-One thing to keep in mind 
-With all the above in mind, CDNs < (costs + performance)
-still expensive
-% Exemplo (Âmbito de aplicação) Netflix [Tuga IO]
-	exemplo akamai  
-		paper: the-akamai-network-a-platform-for-high-performance-internet-applications-technical-publication
+It is worth noting that CDNs bring cost per performance down. Despite that, CDNs are expensive, and currently are used mostly by big companies. It is imperative that CDN's get cheaper. This will allow more parties to use them, thus enhancing internet experience to the final consumer and reducing total internet traffic at the same time.
+% Exemplo (Âmbito de aplicação) Netflix
+An example of a service using a CDN (Amazon EC2) would be the popular movie streaming service Netflix.
+
 
 \subsection{Purpose} %Propósito do paper
-This paper's purpose is to provide organised information about different CDN architectures: the traditional large server infrastructure CDN, the Peer to Peer (P2P) CDN and a new Hybrid architecture which relies on both Servers and Peers. 
+This paper's purpose is to provide organised information about different CDN architectures: the traditional large server infrastructure CDN, the Peer to Peer (P2P) CDN and a new trend of Hybrid architecture which relies on both Servers and Peers. 
 	
-	
-	
-	
-	
-	1 - overview das 3 arquitecturas principais
-		Objetivo do paper - num único texto (organizar informação)
-			- impacto das CDN na sociedade (âmbitos de aplicação)
-			- dado o impacto social das CDN => é importante reduzir os custos associados ás CDN (infraestruturas) de forma a permitir que um numero maior de empresas (de pequena e media dimensão) ou particulares possam usufruir delas. =>impacto Redução da carga nas internet
-
-	
-
-
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Academic CDN (P2P)}							%(Afonso)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -214,10 +200,15 @@ nossa perspetiva
 % Inserir directamente os vários \bibitem 
 \begin{thebibliography}{1}
 \bibitem{reuters}
-http://www.reuters.com/article/2015/04/28/us-akamai-tech-results-idUSKBN0NJ2IV20150428:
-\newblock {Anya George Tharakan, Subrat Patnaik} (1965)
+Anya George Tharakan, Subrat Patnaik: 
+\newblock{"Strong dollar hurts Akamai's profit forecast, shares fall" (http://www.reuters.com/article/2015/04/28/us-akamai-tech-results-idUSKBN0NJ2IV20150428)}
 
+\bibitem{akamai}
+Erik Nygren, Ramesh K. Sitaraman, and Jennifer Sun.:
+\newblock {"The Akamai Network: A Platform for High-Performance Internet Applications" (ACM SIGOPS Operating Systems Review, vol. 44, no. 3, July 2010)}
 
+\bibitem{cdnetworks}
+"How Content Delivery Networks Work" (http://www.cdnetworks.com/blog/how-content-delivery-networks-work/).CDNetworks. Retrieved 22 September 2015.
 
 
 % Exemplo de  um BibItem 
